@@ -1,0 +1,12 @@
+<%- include('header') -%>
+    <h1><%= kindOfDay %></h1>
+    <ul>
+        <li>Eat</li>
+        <li>Code</li>
+        <% for(var i=0   ; i < newItems.length ; i++ ) {  %>
+ <li id="new"> <%= newItems[i] %>  </li>
+       <% } %>
+        <form action="/" method="post">
+            <input name="itemInput" type="text">
+        <button type="submit" id="create" >+</button>
+       <%- include('footer') -%>
